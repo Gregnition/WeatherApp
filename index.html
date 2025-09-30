@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="weatherEffect"></div>
+    <header class="app-header">
+        <h1>Weather</h1>
+        <div class="theme-toggle">
+            <button id="themeBtn" aria-label="Toggle Theme">🌙</button>
+        </div>
+        <button id="unitToggle">°C / °F</button>
+        <div id="dayNightIcon" style="position: fixed; top: 1rem; right: 1rem; font-size: 2rem;"></div>
+    </header>
+    
+    <!-- Error messages will appear here -->
+    <div id="errorMsg" style="min-height:1.5rem;"></div>
+
+    <main class="weather-container">
+        <section class="search-section">
+            <form class="weatherForm">
+                <input type="text" class="cityInput" placeholder="Enter city..." autocomplete="off" />
+                <button type="submit">Search</button>
+                <button type="button" id="geoBtn" aria-label="Use current location">📍</button>
+            </form>
+        </section>
+
+        <section class="saved-cities">
+            <h2>Saved Cities</h2>
+            <div class="city-list" id="cityList">
+                <!-- Saved cities will be injected here -->
+            </div>
+            <button id="deleteAllBtn" style="margin-top:10px; padding:0.5rem 1rem; border:none; border-radius:12px; background-color:#f44336; color:white; cursor:pointer;">Delete All</button>
+        </section>
+
+        <section class="weather-results" id="weatherResults">
+            <!-- Weather cards will be injected here dynamically -->
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by OpenWeather API | Created by Gregory</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
