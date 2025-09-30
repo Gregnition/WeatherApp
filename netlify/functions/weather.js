@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 export async function handler(event) {
   const { city, lat, lon, forecast } = event.queryStringParameters || {};
   const key = process.env.OPENWEATHER_KEY;
