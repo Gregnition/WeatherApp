@@ -1,5 +1,5 @@
 // ===== CONFIG =====
-const apiKey = "43ed457aa05a4ec3643c8a6002359111";
+const apiKey = "YOUR_API_KEY_HERE";
 
 // ===== DOM ELEMENTS =====
 const weatherForm = document.querySelector(".weatherForm");
