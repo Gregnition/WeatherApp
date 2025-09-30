@@ -36,3 +36,9 @@ Provides real-time weather data, animated icons, and 5-day forecasts using the O
 const apiKey = "YOUR_API_KEY_HERE";
 
 4. Open index.html in your browser to view the app locally or you can view the live demo directly online through GitHub Pages.
+
+---
+
+## 🌐 Live Demo
+[Check out the live demo here](https://clinquant-pudding-7eec88.netlify.app/)
+
